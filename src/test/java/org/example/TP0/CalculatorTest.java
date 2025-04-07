@@ -7,6 +7,19 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
+
+    @Test
+    void addShouldReturnTheSumOfTwoNumbers() {
+        Calculator calculator = new Calculator();
+        //Arange
+        int a = 2;
+        int b = 3;
+        //Act
+        double result = Calculator.add(2,3);
+        //Assert
+        assertEquals(5, result);
+    }
+
     @Test
     @DisplayName("Add two numbers")
     void add() {
