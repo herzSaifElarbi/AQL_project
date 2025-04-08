@@ -1,5 +1,6 @@
 package org.example.TP0.EX01;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,6 +9,7 @@ class PersonTest {
 
     //test de nom standard
     @Test
+    @DisplayName("full name test")
     void getFullName() {
         //arange
         Person person1 = new Person("adam", "chit", 25);
@@ -26,6 +28,7 @@ class PersonTest {
     }
     //<18
     @Test
+    @DisplayName("Adult under age test")
     void UnderAgeTest(){
         //arange
         Person person3 = new Person("hod", "sale7", 15);
@@ -34,12 +37,14 @@ class PersonTest {
     }
     //==18 here is boundary testing
     @Test
+    @DisplayName("Adult boundary test")
     void isAdultBoundaryTest(){
         Person person2 = new Person("idris", "no7", 18);
         assertTrue(person2.isAdult());
     }
     //>18
     @Test
+    @DisplayName("Adult test")
     void isAdult() {
         //arange
         Person person1 = new Person("adam", "chit", 25);
