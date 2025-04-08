@@ -29,6 +29,16 @@ class RomanNumeralTest {
     }
     @Test
     void convert() {
-
+        //arange
+        RomanNumeral romanNumeral = new RomanNumeral();
+        //act + assert
+        assertAll(
+                ()->assertEquals(1, romanNumeral.convert("I")),//base case
+                ()->assertEquals(6, romanNumeral.convert("VI")),//normal add
+                ()->assertEquals(12, romanNumeral.convert("XII")),//multiple add
+                ()->assertEquals(4, romanNumeral.convert("IV")),//special case(5 - 1)
+                ()->assertEquals(9, romanNumeral.convert("IX")),//same(10 - 1)
+                ()->assertEquals(8, romanNumeral.convert("VIII"))//repeated letters
+        );
     }
 }
