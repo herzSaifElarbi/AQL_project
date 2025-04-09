@@ -1,4 +1,4 @@
-package org.example.TP1.BranchCoverageTest;
+package org.example.TP1.LineCoverageTest;
 
 public class Calculator {
 
