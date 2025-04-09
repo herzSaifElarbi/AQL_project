@@ -5,16 +5,16 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PersonTest {
+class PersonCorrectionTest {
 
     //test de nom standard
     @Test
     @DisplayName("full name test")
     void getFullName() {
         //arange
-        Person person1 = new Person("adam", "chit", 25);
-        Person person2 = new Person("idris", "no7", 35);
-        Person person3 = new Person("hod", "sale7", 0);
+        PersonCorrection person1 = new PersonCorrection("adam", "chit", 25);
+        PersonCorrection person2 = new PersonCorrection("idris", "no7", 35);
+        PersonCorrection person3 = new PersonCorrection("hod", "sale7", 0);
         //act
         String result1 = person1.getFullName();
         String result2 = person2.getFullName();
@@ -31,7 +31,7 @@ class PersonTest {
     @DisplayName("Adult under age test")
     void UnderAgeTest(){
         //arange
-        Person person3 = new Person("hod", "sale7", 15);
+        PersonCorrection person3 = new PersonCorrection("hod", "sale7", 15);
         //act+assert
         assertFalse(person3.isAdult());
     }
@@ -39,7 +39,7 @@ class PersonTest {
     @Test
     @DisplayName("Adult boundary test")
     void isAdultBoundaryTest(){
-        Person person2 = new Person("idris", "no7", 18);
+        PersonCorrection person2 = new PersonCorrection("idris", "no7", 18);
         assertTrue(person2.isAdult());
     }
     //>18
@@ -47,8 +47,19 @@ class PersonTest {
     @DisplayName("Adult test")
     void isAdult() {
         //arange
-        Person person1 = new Person("adam", "chit", 25);
+        PersonCorrection person1 = new PersonCorrection("adam", "chit", 25);
         //act+assert
         assertTrue(person1.isAdult());
+    }
+    @Test
+    @DisplayName("age>=0 ???")
+    void positiveAgeTest(){
+        // Arrange & Act & Assert in one step
+        IllegalArgumentException exception = assertThrows(
+                IllegalArgumentException.class,
+                () -> new PersonCorrection("hod", "sale7", -15),
+                "Expected exception when age < 0"
+        );
+        assertEquals("Age must be positive", exception.getMessage());
     }
 }
