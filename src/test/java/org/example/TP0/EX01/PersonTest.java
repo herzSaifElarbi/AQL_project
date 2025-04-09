@@ -51,4 +51,15 @@ class PersonTest {
         //act+assert
         assertTrue(person1.isAdult());
     }
+    @Test
+    @DisplayName("age>=0 ???")
+    void positiveAgeTest(){
+        // Arrange & Act & Assert in one step
+        IllegalArgumentException exception = assertThrows(
+                IllegalArgumentException.class,
+                () -> new Person("hod", "sale7", -15),
+                "Expected exception when age < 0"
+        );
+        assertEquals("Age must be positive", exception.getMessage());
+    }
 }

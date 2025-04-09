@@ -6,6 +6,9 @@ public class Person {
     private int age;
 
     public Person(String firstName, String lastName, int age) {
+        if(age<0){
+            throw new IllegalArgumentException("Age must be positive");
+        }
         this.firstName = firstName;
         this.lastName  = lastName;
         this.age       = age;
