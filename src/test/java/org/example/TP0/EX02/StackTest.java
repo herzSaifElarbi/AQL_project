@@ -6,7 +6,28 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class StackTest {
+    @Test
+    @DisplayName("stack empty, can i pop??")
+    void stackEmptyPopTest(){
+        Stack stack = new Stack();
+        assertThrows(IllegalStateException.class, stack::pop);
+    }
+    @Test
+    @DisplayName("stack expansion does it work??")
+    void stackExpansionTest() {
+        Stack stack = new Stack();
+        for (int i = 0; i < 15; i++) {
+            stack.push(i);
+        }
+        assertEquals(15, stack.size());
+        assertEquals(14, stack.peek());
 
+        // Pop all elements
+        for (int i = 14; i >= 0; i--) {
+            assertEquals(i, stack.pop());
+        }
+        assertTrue(stack.isEmpty());
+    }
     @Test
     @DisplayName("init stack: empty, size zero")
     void initStackTest(){
