@@ -1,5 +1,6 @@
 package org.example.TP1.LineCoverageTest;
 
+import org.example.TP1.Prime;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

@@ -1,5 +1,6 @@
 package org.example.TP1.LineCoverageTest;
 
+import org.example.TP1.Calculator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

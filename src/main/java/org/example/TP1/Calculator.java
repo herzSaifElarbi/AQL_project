@@ -1,4 +1,4 @@
-package org.example.TP1.LineCoverageTest;
+package org.example.TP1;
 
 public class Calculator {
 
