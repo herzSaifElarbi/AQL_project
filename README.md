@@ -42,9 +42,10 @@
       
     - EX05:
         - comment:
+          - fixed bugs in class and created a new class the bug fixed is out of range length in the for loop, and same for the while loop
       
         - LineCoverageTest:
-      
+            - ![Screenshot from 2025-04-14 04-53-14.png](images/Screenshot%20from%202025-04-14%2004-53-14.png)
         - ConditionCoverageTest:
       
         - BranchCoverageTest:
