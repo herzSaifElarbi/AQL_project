@@ -33,9 +33,9 @@
       
     - EX04:
         - comment:
-      
+          - here we didn't find any bug
         - LineCoverageTest:
-      
+            - ![Screenshot from 2025-04-14 04-35-18.png](images/Screenshot%20from%202025-04-14%2004-35-18.png)
         - ConditionCoverageTest:
       
         - BranchCoverageTest:
