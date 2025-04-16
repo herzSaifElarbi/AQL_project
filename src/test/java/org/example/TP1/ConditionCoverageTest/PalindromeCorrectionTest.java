@@ -1,4 +1,4 @@
-package org.example.TP1.LineCoverageTest;
+package org.example.TP1.ConditionCoverageTest;
 
 import org.example.TP1.EX01.PalindromeCorrection;
 import org.junit.jupiter.api.DisplayName;

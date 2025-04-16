@@ -1,7 +1,6 @@
 package org.example.TP1.LineCoverageTest;
 
-import org.example.TP1.BinarySearch;
-import org.example.TP1.BinarySearchCorrection;
+import org.example.TP1.EX03.BinarySearchCorrection;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

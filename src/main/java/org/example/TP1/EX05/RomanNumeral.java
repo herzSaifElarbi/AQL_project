@@ -1,4 +1,4 @@
-package org.example.TP1;
+package org.example.TP1.EX05;
 
 public class RomanNumeral {
     public static String toRoman(int n) {

@@ -1,6 +1,6 @@
 package org.example.TP1.LineCoverageTest;
 
-import org.example.TP1.RomanNumeral;
+import org.example.TP1.EX05.RomanNumeral;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

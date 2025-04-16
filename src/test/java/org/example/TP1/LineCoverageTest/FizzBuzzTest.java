@@ -1,6 +1,6 @@
 package org.example.TP1.LineCoverageTest;
 
-import org.example.TP1.FizzBuzz;
+import org.example.TP1.EX06.FizzBuzz;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

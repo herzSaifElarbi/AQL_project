@@ -1,4 +1,4 @@
-package org.example.TP1.LineCoverageTest;
+package org.example.TP1.BranchCoverageTest;
 
 import org.example.TP1.EX01.PalindromeCorrection;
 import org.junit.jupiter.api.DisplayName;
@@ -26,5 +26,10 @@ class PalindromeCorrectionTest {
     @DisplayName("aka => palindrome?")
     void isPalindrome() {
         assertTrue(PalindromeCorrection.isPalindrome("aka"));
+    }
+    @Test
+    @DisplayName("i < j init?")
+    void testSingleCharacter() {
+        assertTrue(PalindromeCorrection.isPalindrome("a"));
     }
 }

@@ -1,6 +1,6 @@
 package org.example.TP1.LineCoverageTest;
 
-import org.example.TP1.Palindrome;
+import org.example.TP1.EX01.Palindrome;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

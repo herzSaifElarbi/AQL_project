@@ -1,4 +1,4 @@
-package org.example.TP1;
+package org.example.TP1.EX03;
 
 public class BinarySearch {
     public static int binarySearch(int[] array, int element) {

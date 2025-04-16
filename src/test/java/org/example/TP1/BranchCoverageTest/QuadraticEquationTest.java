@@ -1,4 +1,4 @@
-package org.example.TP1.LineCoverageTest;
+package org.example.TP1.BranchCoverageTest;
 
 import org.example.TP1.EX04.QuadraticEquation;
 import org.junit.jupiter.api.DisplayName;

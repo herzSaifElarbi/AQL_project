@@ -1,4 +1,4 @@
-package org.example.TP1.LineCoverageTest;
+package org.example.TP1.BranchCoverageTest;
 
 import org.example.TP1.EX05.RomanNumeralCorrection;
 import org.junit.jupiter.api.DisplayName;

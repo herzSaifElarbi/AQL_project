@@ -1,6 +1,6 @@
-package org.example.TP1;
+package org.example.TP1.EX02;
 
-public class AnagramCorrection {
+public class Anagram {
     public static boolean isAnagram(String s1, String s2) {
         if (s1 == null || s2 == null) {
             throw new NullPointerException("Strings must not be null");
@@ -11,7 +11,7 @@ public class AnagramCorrection {
             return false;
         }
         int[] count = new int[26];
-        for (int i = 0; i < s1.length(); i++) {//fixed <=
+        for (int i = 0; i <= s1.length(); i++) {
             count[s1.charAt(i) - 'a']++;
             count[s2.charAt(i) - 'a']--;
         }
