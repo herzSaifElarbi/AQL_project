@@ -50,13 +50,19 @@
       
         - BranchCoverageTest:
   
-  - EX06:
-      - comment:
+c      - comment:
         - corrected code, found after testing the boundary = 1, class created as mentionned
       - LineCoverageTest:
         - ![Screenshot from 2025-04-14 05-05-16.png](images/Screenshot%20from%202025-04-14%2005-05-16.png)
       - ConditionCoverageTest:
     
       - BranchCoverageTest:
-    
 
+
+- ## TP2:
+    **- EX01:**
+
+
+- ## TP3:
+    **- EX01:**
+        
